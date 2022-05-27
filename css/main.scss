@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+:root {
+    --DarkCyan: hsl(185, 75%, 39%);
+    --VeryDarkDesaturatedBlue: hsl(229, 23%, 23%);
+    --DarkGrayishBlue: hsl(227, 10%, 46%);
+    --DarkGray: hsl(0, 0%, 59%);
+  }
+body {
+    margin: 0;
+    font-family: 'Kumbh Sans';
+    // background-color: var(--DarkCyan);
+    // overflow: hidden; /* Hide scrollbars */
+    min-height: 100vh;
+    background: url(../images/bg-pattern-top.svg) right 50vw bottom 40vh no-repeat,
+    url(../images/bg-pattern-bottom.svg) 50vw 50vh no-repeat var(--DarkCyan);
+}
+header {
+    p {
+        text-align: center;
+        margin: 0;
+    }
+    .background-image {
+        .background-top {
+            margin-top: -40em;
+            margin-left: -15em;
+            
+        }
+        .background-bottom {
+            margin-left: 46em;
+        }
+    }
+}
+
+main {
+    position: absolute;               
+    top: 50%;      
+    left: 50%;            
+    transform: translate(-50%, -50%);
+    .container {
+        width: 23em;
+        margin: auto;
+        background-color: white;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 20px 60px 5px rgba(128, 128, 128, 0.522);
+        .img-header {
+            width: 23em;
+            border-radius: 10px 10px 0 0;
+        }
+        .img-profile {
+            border-radius: 50%;
+            margin-top: -3em;
+            border: 5px solid white;
+        }
+        .info {
+            h1 {
+                font-size: 1.3em;
+                font-weight: 700;
+                color: var(--VeryDarkDesaturatedBlue);
+                span {
+                    color: var(--DarkGray);
+                    font-weight: 400;
+                    margin-left: 5px;
+                }
+            }
+            h2 {
+                font-size: 1.1em;
+                font-weight: 400;
+                color: var(--DarkGray);
+                line-height: .2;
+            }
+        }
+        hr {
+            margin-top: 40px;
+            border: none;
+            height: .1px;
+            background-color: rgba(51, 51, 51, 0.301); /* Modern Browsers */
+        }
+        .social {
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+            padding-bottom: 18px;
+            .followers,.likes,.photos {
+                line-height: .5;
+                h3 {
+                    font-weight: 700;
+                    color: var(--VeryDarkDesaturatedBlue);
+                }
+                p {
+                    color: var(--DarkGray);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:600px){
+    .bg {
+        .bg-top {
+            margin-top: -40em;
+            margin-left: -45em;
+            
+        }
+        .bg-bottom {
+            margin-left: 10em;
+            margin-top: -2em;
+        }
+    }
+}

@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+:root {
+  --DarkCyan: hsl(185, 75%, 39%);
+  --VeryDarkDesaturatedBlue: hsl(229, 23%, 23%);
+  --DarkGrayishBlue: hsl(227, 10%, 46%);
+  --DarkGray: hsl(0, 0%, 59%);
+}
+
+body {
+  margin: 0;
+  font-family: 'Kumbh Sans';
+  min-height: 100vh;
+  background: url(../images/bg-pattern-top.svg) right 50vw bottom 40vh no-repeat, url(../images/bg-pattern-bottom.svg) 50vw 50vh no-repeat var(--DarkCyan);
+}
+
+header p {
+  text-align: center;
+  margin: 0;
+}
+
+header .background-image .background-top {
+  margin-top: -40em;
+  margin-left: -15em;
+}
+
+header .background-image .background-bottom {
+  margin-left: 46em;
+}
+
+main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+main .container {
+  width: 23em;
+  margin: auto;
+  background-color: white;
+  border-radius: 10px;
+  text-align: center;
+  -webkit-box-shadow: 0 20px 60px 5px rgba(128, 128, 128, 0.522);
+          box-shadow: 0 20px 60px 5px rgba(128, 128, 128, 0.522);
+}
+
+main .container .img-header {
+  width: 23em;
+  border-radius: 10px 10px 0 0;
+}
+
+main .container .img-profile {
+  border-radius: 50%;
+  margin-top: -3em;
+  border: 5px solid white;
+}
+
+main .container .info h1 {
+  font-size: 1.3em;
+  font-weight: 700;
+  color: var(--VeryDarkDesaturatedBlue);
+}
+
+main .container .info h1 span {
+  color: var(--DarkGray);
+  font-weight: 400;
+  margin-left: 5px;
+}
+
+main .container .info h2 {
+  font-size: 1.1em;
+  font-weight: 400;
+  color: var(--DarkGray);
+  line-height: .2;
+}
+
+main .container hr {
+  margin-top: 40px;
+  border: none;
+  height: .1px;
+  background-color: rgba(51, 51, 51, 0.301);
+  /* Modern Browsers */
+}
+
+main .container .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+  padding-bottom: 18px;
+}
+
+main .container .social .followers, main .container .social .likes, main .container .social .photos {
+  line-height: .5;
+}
+
+main .container .social .followers h3, main .container .social .likes h3, main .container .social .photos h3 {
+  font-weight: 700;
+  color: var(--VeryDarkDesaturatedBlue);
+}
+
+main .container .social .followers p, main .container .social .likes p, main .container .social .photos p {
+  color: var(--DarkGray);
+}
+
+@media screen and (max-width: 600px) {
+  .bg .bg-top {
+    margin-top: -40em;
+    margin-left: -45em;
+  }
+  .bg .bg-bottom {
+    margin-left: 10em;
+    margin-top: -2em;
+  }
+}
+/*# sourceMappingURL=main.css.map */
